@@ -24,6 +24,48 @@ This notebook demonstrates how to use the K-Means clustering algorithm for unsup
 - The Elbow Method helps determine the best value for `n_clusters`.
 - K-Means works best when clusters are spherical and of similar size.
 
+# Hierarchical Clustering and Its Types
+
+This notebook demonstrates how to use Hierarchical Clustering for unsupervised machine learning using Python and scikit-learn.
+
+## What is Hierarchical Clustering?
+- Hierarchical Clustering is an unsupervised learning algorithm that builds a hierarchy of clusters.
+- It does not require you to specify the number of clusters in advance.
+- The results are often visualized using a dendrogram, which shows how clusters are merged or split at each step.
+
+## Types of Hierarchical Clustering
+
+### 1. Agglomerative Clustering (Bottom-Up)
+- Starts with each data point as its own cluster.
+- At each step, the two closest clusters are merged.
+- The process continues until all points are in a single cluster or a stopping criterion is met.
+- Most commonly used type in practice.
+
+### 2. Divisive Clustering (Top-Down)
+- Starts with all data points in a single cluster.
+- At each step, the cluster is split into smaller clusters.
+- The process continues until each data point is its own cluster.
+- Less commonly used due to higher computational cost.
+
+## Steps Covered
+
+- Load and explore the dataset.
+- Compute the distance matrix and plot the dendrogram to visualize the hierarchy.
+- Choose the number of clusters by cutting the dendrogram at a chosen level.
+- Apply Agglomerative Clustering to assign cluster labels to the data.
+- Visualize the clustered data.
+
+## Notes
+
+- Agglomerative clustering is the default and most widely used method.
+- Different linkage criteria (single, complete, average, ward) affect how clusters are merged.
+- Dendrograms help in deciding the optimal number of clusters.
+
+
+This notebook is a practical guide for beginners to understand and apply hierarchical clustering and its types for unsupervised data
+
+
+
 ## Requirements
 
 - Python 3.x
@@ -33,6 +75,7 @@ This notebook demonstrates how to use the K-Means clustering algorithm for unsup
 - seaborn
 - scikit-learn
 - Jupyter Notebook
+- scipy
 
 ---
 
