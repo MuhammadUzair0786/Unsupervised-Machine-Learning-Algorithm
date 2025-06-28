@@ -64,6 +64,36 @@ This notebook demonstrates how to use Hierarchical Clustering for unsupervised m
 
 This notebook is a practical guide for beginners to understand and apply hierarchical clustering and its types for unsupervised data
 
+# DBSCAN Clustering
+
+This notebook demonstrates how to use the **DBSCAN** (Density-Based Spatial Clustering of Applications with Noise) algorithm for unsupervised clustering using Python and scikit-learn.
+
+## What is DBSCAN?
+- DBSCAN is a density-based clustering algorithm.
+- It groups together points that are closely packed (high density) and marks points that lie alone in low-density regions as outliers (noise).
+- Works well for data with clusters of arbitrary shape and is robust to outliers.
+- Does not require you to specify the number of clusters in advance.
+
+## Steps Covered
+
+- Generate a non-linearly separable dataset using `make_moons`.
+- Visualize the original dataset.
+- Apply DBSCAN clustering to the data.
+- Assign cluster labels and detect outliers.
+- Visualize the clustered data and outliers using scatter plots.
+
+## Notes
+
+- DBSCAN parameters:
+  - `eps`: Maximum distance between two samples for them to be considered as in the same neighborhood.
+  - `min_samples`: Minimum number of points to form a dense region (cluster).
+- Points labeled as `-1` are considered outliers/noise.
+- DBSCAN is especially useful for datasets where clusters are not well separated or are of different shapes.
+
+---
+
+This notebook is a practical guide for beginners to understand and apply DBSCAN clustering for unsupervised data analysis and outlier detection.
+
 
 
 ## Requirements
