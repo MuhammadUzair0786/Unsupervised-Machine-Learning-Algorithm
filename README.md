@@ -24,6 +24,30 @@ This notebook demonstrates how to use the K-Means clustering algorithm for unsup
 - The Elbow Method helps determine the best value for `n_clusters`.
 - K-Means works best when clusters are spherical and of similar size.
 
+# Silhouette Score in Clustering
+
+This notebook demonstrates how to use the **Silhouette Score** to evaluate the quality of clustering results, such as those from K-Means.
+
+## What is Silhouette Score?
+- The Silhouette Score measures how well each data point fits within its assigned cluster and how distinct the clusters are from each other.
+- The score ranges from -1 to 1:
+  - **1**: Data point is well matched to its own cluster and far from other clusters (good clustering).
+  - **0**: Data point is on or very close to the decision boundary between two clusters (overlapping clusters).
+  - **-1**: Data point may have been assigned to the wrong cluster (poor clustering).
+
+## Why Use Silhouette Score?
+- It helps you determine the optimal number of clusters by comparing scores for different cluster counts.
+- A higher average Silhouette Score indicates better-defined clusters.
+
+## Steps Covered
+
+- Apply K-Means clustering with different numbers of clusters.
+- Calculate the Silhouette Score for each clustering result.
+- Plot the Silhouette Score to visualize which number of clusters gives the best result.
+
+ for evaluating and selecting the best clustering solution in
+
+
 # Hierarchical Clustering and Its Types
 
 This notebook demonstrates how to use Hierarchical Clustering for unsupervised machine learning using Python and scikit-learn.
